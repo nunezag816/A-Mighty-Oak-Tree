@@ -1,22 +1,31 @@
-# A Mighty Oak Tree - Java Template
+# Hello World (Java)
 
-## Instructions
+You can find the instructions for this lab [here](https://morethanequations.com/Computer-Science/Labs/A-Mighty-Oak-Tree). Create a new repository on GitHub to house your code. Be sure to make the repository public so that I can view and grade it.
 
-You can find the instructions for this lab [here](https://morethanequations.com/Computer-Science/Labs/A-Mighty-Oak-Tree).
+We will use [Gradle](https://gradle.org/) to automate common development tasks.
 
-In addition to the usual source and test files, you will be reading data from a file called `cheese_data.csv`. This file is included in the root of the directory. Feel free to move the file to wherever you want so that you can read the data from it.
+## Building the App
 
-## Gradle
+You can build the app using:
 
-If you are using an IDE like Visual Studio, there are built-in utilities that will recognize the Gradle build file. Otherwise, follow these steps to install the Gradle build tool:
+```bash
+./gradlew build
+```
 
-1. Visit the [Gradle](https://gradle.org/install/) installation homepage.
-2. Find your operatoring system, and follow the instructions to install Gradle.
+## Testing the App
+
+You can run the automated suite of tests using:
+
+```bash
+./gradlew test
+```
 
 ## Running the App
 
-In a terminal from the root of the project, type `gradle run` into the command line. This will run the application in the terminal, allowing you to manually test the application.
+You can run the app using:
 
-## Testing
+```bash
+./gradlew run --quiet --console=plain
+```
 
-In a terminal from the root of the project, type `gradle test` into the command line. This will run all of the automated tests.
+The two flags passed to the `run` command hide the noisy output from Gradle. You can see the details from Gradle by omitting those flags.
