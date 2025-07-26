@@ -3,13 +3,13 @@ package org.example;
 public class MainDriver {
     public static void main(String[] args) {
         Squirrel cheeks = new Squirrel("Cheeks");
-        Node nodeOne = new Node(cheeks);
+        Node<Squirrel> nodeOne = new Node<>(cheeks);
 
         Squirrel squeaks = new Squirrel("Squeaks");
-        Node nodeTwo = new Node(squeaks);
+        Node<Squirrel> nodeTwo = new Node<>(squeaks);
 
         Squirrel fluffybutt = new Squirrel("Mr. Fluffy Butt");
-        Node nodeThree = new Node(fluffybutt);
+        Node<Squirrel> nodeThree = new Node<>(fluffybutt);
 
         nodeOne.setLeft(nodeTwo);
         nodeOne.setRight(nodeThree);
